@@ -19,7 +19,7 @@ export default function home() {
             <h1>Welcome to <span style={{color:'hsl(38,92%,50%)'}}>Carrer Vision</span></h1>
             <p>Career Vision is an AI-powered career guidance system designed to help students identify personalized career paths, improve their skills, and achieve their professional goals.</p>
             <br/>
-            <button className='bt1'>Get Started</button>
+            <Link to='/tabs'><button className='bt1'>Get Started</button></Link>
         </div>
         <div className='right'>
             <img className='img2' src='./img2.jpeg' alt=''/>
