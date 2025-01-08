@@ -125,7 +125,7 @@ export default function Register() {
           Register
         </button>
         <br />
-        <Link to='/'>
+        <Link to='/login'>
           <button onClick={redirecting} className='signupbt2'>
             Login
           </button>
