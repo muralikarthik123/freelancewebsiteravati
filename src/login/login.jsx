@@ -15,7 +15,7 @@ export default function Login() {
     e.preventDefault(); // Prevent default form submission behavior
 
     try {
-      const response = await axios.post('https://catfact.ninja/fact', {
+      const response = await axios.post('http://127.0.0.1:5000/login', {
         username,
         password,
       });

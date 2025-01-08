@@ -37,7 +37,7 @@ export default function Register() {
       data.append('mobileNumber', mobileNumber);
       data.append('profilePicture', profilePicture);
 
-      const response = await axios.post('http://your-backend-api-url/register', data, {
+      const response = await axios.post('http://127.0.0.1:5000/register', data, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
