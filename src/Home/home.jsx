@@ -8,8 +8,8 @@ export default function home() {
       <div className='header'>
         <h1>Carrer<span style={{color:'hsl(38,92%,50%)'}}>Vison</span></h1>
         <ul>
-            <li><Link to='/login' style={{color:'hsl(38,92%,50%)',textDecoration:'none'}}>Login</Link></li>
-            <li><Link to='/signup' style={{color:'hsl(38,92%,50%)',textDecoration:'none'}}>SignIn</Link></li>
+            <li><Link to='/adminlogin' style={{color:'hsl(38,92%,50%)',textDecoration:'none'}}>AdminLogin</Link></li>
+            <li><Link to='/studentlogin' style={{color:'hsl(38,92%,50%)',textDecoration:'none'}}>StundentLogin</Link></li>
         </ul>
       </div>
 
@@ -19,7 +19,7 @@ export default function home() {
             <h1>Welcome to <span style={{color:'hsl(38,92%,50%)'}}>Carrer Vision</span></h1>
             <p>Career Vision is an AI-powered career guidance system designed to help students identify personalized career paths, improve their skills, and achieve their professional goals.</p>
             <br/>
-            <Link to='/tabs'><button className='bt1'>Get Started</button></Link>
+            <button className='bt1'>Get Started</button>
         </div>
         <div className='right'>
             <img className='img2' src='./img2.jpeg' alt=''/>

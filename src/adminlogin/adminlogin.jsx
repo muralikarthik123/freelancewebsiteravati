@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import './login.css';
+import './adminlogin.css';
 import { MdCancel } from "react-icons/md";
 import axios from 'axios';
 import {Link} from 'react-router-dom'
 
 export default function Login() {
-  const redirecting =()=>{
-    alert('redirecting to Signup page')
-  } 
+   
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -64,12 +62,11 @@ export default function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
           <p className='forgotpass'>Forgot Password?</p>
-          <button className='loginbt1' type='submit'>
+          <Link to='/tabs'><button className='loginbt1' type='submit'>
             Login
-          </button>
+          </button></Link>
         </form>
         <br />
-        <Link to='/signup'><button onClick={redirecting}className='signupbt2'>Signup</button></Link>
       </div>
     </div>
   );

@@ -1,0 +1,32 @@
+[
+    {
+        "id":"1",
+        "cource":"Python",
+        "link":"https://www.w3schools.com/python/"
+    },
+    {
+        "id":"2",
+        "cource":"Java",
+        "link":"https://www.w3schools.com/java/"
+    },
+    {
+        "id":"3",
+        "cource":"C Programing",
+        "link":"https://www.w3schools.com/c/"
+    },
+    {
+        "id":"4",
+        "cource":"R Programing",
+        "link":"https://www.w3schools.com/r/"
+    },
+    {
+        "id":"5",
+        "cource":"GO Language",
+        "link":"https://www.w3schools.com/go/"
+    },
+    {
+        "id":"6",
+        "cource":"Javascript",
+        "link":"https://www.w3schools.com/js/"
+    }
+]

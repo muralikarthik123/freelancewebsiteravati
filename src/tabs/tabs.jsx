@@ -3,6 +3,7 @@ import './tabs.css'
 import Tab0 from '../manage/manage.jsx'
 import Tab1 from '../community/community.jsx'
 import Tab2 from '../cource/cource.jsx'
+import {Link} from "react-router-dom"
 export default function Tabs() {
   const [data,setData]=useState('manage')
   const open=(e)=>{
@@ -19,9 +20,7 @@ export default function Tabs() {
         <br/>
         <button className='bt2' onClick={()=>open('cources')}>Cources</button>
         <br/>
-        <button className='bt2' onClick={()=>open('cources')}>Cources</button>
-        <br/>
-        <button  className='logout' >logout</button>
+        <Link to='/adminlogin'><button  className='logout' >logout</button></Link>
         <br/>
         <p></p>
       </div>

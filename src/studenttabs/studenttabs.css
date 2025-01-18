@@ -1,0 +1,44 @@
+.studenttabs{
+    width:100%;
+    display:flex;
+    background-color: hsl(219, 28%, 10%);
+    .left{
+        width:20%;
+        h1{
+            text-align: center;
+            color:hsl(38,92%,50%);
+            font-size: 2.2rem;
+        }
+        .bt2{
+            margin-top: 100px;
+            margin-left: 12%;
+            height:40px;
+            width:200px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            background-color:white;
+            color:hsl(219, 28%, 10%);
+            border:none;
+        }
+        .bt1:hover{
+            background-color:hsl(38,92%,50%) ;
+        }
+        .bt2:hover{
+            background-color:hsl(38,92%,50%) ;
+        }
+    }
+    .right{
+        width:80%;
+    }
+    .logout{
+        margin-top: 100px;
+            margin-left: 12%;
+            height:40px;
+            width:200px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            background-color:red;
+            color:white;
+            border:none;
+    }
+}

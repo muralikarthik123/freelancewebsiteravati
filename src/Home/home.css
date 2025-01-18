@@ -7,9 +7,9 @@
         padding-left: 20px;
         ul{
             display:flex;
-            gap:100%;
+            gap:30%;
             align-items: center;
-            margin-left: 60%;
+            margin-left: 50%;
             li{
                 list-style-type: none;
                 font-size: 20px;

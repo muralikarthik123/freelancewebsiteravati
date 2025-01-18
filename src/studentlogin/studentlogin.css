@@ -1,0 +1,91 @@
+.studentlogin{
+    width:100%;
+    display:flex;
+    background-color:hsl(219, 28%, 10%);
+    height:100vh;
+    
+    .leftside{
+        width:50%;
+        .img1{
+            width:60%;
+            margin-top: 15%;
+            margin-left: 15%;
+        }
+        h1{
+            padding-left: 20%;
+            color:white;
+            font-size: 40px;
+        }
+        p{
+            padding-left: 20%;
+            color:rgb(227, 61, 61);
+            font-weight: 700;
+        }
+    }
+    .rightside{
+        border:1px solid white;
+        background-color: white;
+        border-radius: 20px;
+        margin:2%;
+        width:50%;
+        .icon{
+            margin-top: 20px;
+            font-size: 40px;
+            margin-left: 90%;
+        }
+        h1{
+            text-align: center;
+            font-size:2.5rem;
+            font-weight: 900;
+            color:hsl(38,92%,50%);
+        }
+        p{
+            padding-left: 20%;
+            font-weight:800;
+            font-size:1.2rem;
+        }
+        .inputs{
+            width:60%;
+            height:40px;
+            background-color: rgb(31, 41, 55);
+            border:none;
+            border-radius: 5px;
+            margin-left:20%;
+            color:white;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+
+        }
+        ::placeholder{
+            color:white;
+            padding-left: 10px;
+        }
+        .forgotpass{
+            padding-left: 50%;
+            color:hsl(38,92%,50%);
+        }
+        .loginbt1{
+            margin-top: 3%;
+            margin-left: 45%;
+            border:none;
+            height: 35px;
+            width:80px;
+            background-color: hsl(38,92%,50%);
+            font-weight: 800;
+            font-size:1.2rem;
+            border-radius: 5px;
+            color:white;
+            box-shadow: 1px 3px 3px hsl(38,92%,50%);
+            
+        }
+        .signupbt2{
+            margin-top: 10px;
+            margin-left: 45%;
+            font-weight: 800;
+            font-size:1.2rem;
+            background-color: white;
+            border:none;
+            height: 30px;
+            width:80px;
+        }
+    }
+}

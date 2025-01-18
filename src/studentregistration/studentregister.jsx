@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './register.css';
+import './studentregister.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
@@ -70,7 +70,7 @@ export default function Register() {
       {/* Right Side */}
 
       <form className='rightside'>
-        <h1>SignUp</h1>
+        <h1>Register SignUp</h1>
         <p>Username:</p>
         <input
           className='inputs'
@@ -125,7 +125,7 @@ export default function Register() {
           Register
         </button>
         <br />
-        <Link to='/login'>
+        <Link to='/adminlogin'>
           <button onClick={redirecting} className='signupbt2'>
             Login
           </button>
