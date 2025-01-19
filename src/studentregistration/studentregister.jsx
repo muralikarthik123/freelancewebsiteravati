@@ -9,7 +9,7 @@ export default function Register() {
     password: '',
     newPassword: '',
     mobileNumber: '',
-    profilePicture: null, // File upload
+    email:'',
   });
 
   const handleInputChange = (e) => {
@@ -17,14 +17,11 @@ export default function Register() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleFileChange = (e) => {
-    setFormData({ ...formData, profilePicture: e.target.files[0] });
-  };
 
   const handleRegister = async () => {
-    const { username, password, newPassword, mobileNumber, profilePicture } = formData;
+    const { username, password, newPassword, mobileNumber, email } = formData;
 
-    if (!username || !password || !newPassword || !mobileNumber || !profilePicture) {
+    if (!username || !password || !newPassword || !mobileNumber || !email) {
       alert('Please fill in all fields.');
       return;
     }
@@ -35,7 +32,7 @@ export default function Register() {
       data.append('password', password);
       data.append('newPassword', newPassword);
       data.append('mobileNumber', mobileNumber);
-      data.append('profilePicture', profilePicture);
+      data.append('profilePicture', email);
 
       const response = await axios.post('http://127.0.0.1:5000/register', data, {
         headers: {
@@ -111,12 +108,14 @@ export default function Register() {
           onChange={handleInputChange}
           required
         />
-        <p>Profile Picture:</p>
+        <p>Email:</p>
         <input
-          className='inputfile'
-          type='file'
-          name='profilePicture'
-          onChange={handleFileChange}
+          className='inputs'
+          type='email'
+          name='email'
+          placeholder='Enter Email'
+          value={formData.email}
+          onChange={handleInputChange}
           required
         />
         <br />
