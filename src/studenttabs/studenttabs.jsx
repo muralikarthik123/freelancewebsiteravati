@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import './studenttabs.css'
 import Tab3 from '../cources/cources.jsx'
 import Tab4 from '../prediction/prediction.jsx'
-// import Tab5 from '../cource/cource.jsx'
+import Tab5 from '../assignment/assignment.jsx'
 import { Link } from 'react-router-dom'
 export default function Tabs() {
   const [data,setData]=useState('cource')
@@ -42,7 +42,7 @@ export default function Tabs() {
       {/*cource*/}
       {data==='assessment' &&(
         <div className='right'>
-          <Tab3/>
+          <Tab5/>
         </div>
       )}
       
