@@ -32,6 +32,7 @@ export default function Tabs() {
     {/*cource*/}
     {data==='dashboard' &&(
       <div className='right'>
+        <h1 style={{textAlign:'center',color:'white',textDecoration:'underLine'}}>Student DashBoard</h1>
         <Tab6/>
       </div>
     )}
